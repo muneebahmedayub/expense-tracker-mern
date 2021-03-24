@@ -4,7 +4,8 @@ import store from '../redux/store'
 import { logout } from '../redux/actions/authActions'
 
 const axiosInterceptor = () => {
-    const baseUrl = 'http://localhost:5000'
+    const baseUrl = 'https://muneeb-expense-tracker.herokuapp.com/'
+    // const baseUrl = 'http://localhost:5000'
 
     axios.defaults.baseURL = baseUrl
     axios.defaults.headers.post['Content-Type'] = 'application/json'
